@@ -1,12 +1,12 @@
 import {
     AiFillStar,
-    AiOutlineStar,
     AiOutlineShoppingCart,
   } from "react-icons/ai";
   import { useAppDispatch } from "@/redux/hooks";
   import { addToCart } from "@/redux/features/cartSlice";
   import { makeToast } from "@/utils/helper";
-  
+  import Image from "next/image";
+
   interface propsType {
     id: string;
     img: string;
@@ -33,7 +33,7 @@ import {
     return (
       <div className="border border-gray-200">
         <div className="text-center border-b border-gray-200">
-          <img className="inline-block" src={img} alt={title} />
+          <Image className="inline-block" src={img} alt={title} width={500} height={500}/>
         </div>
   
         <div className="px-8 py-4">

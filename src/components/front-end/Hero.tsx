@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
  
 const Hero = () => {
   return (
@@ -24,7 +25,7 @@ const Hero = () => {
           </div>
         </div>
         <div>
-          <img className="ml-auto" src="/sample1.jpg" alt="Hero banner showcasing notebooks" />
+          <Image className="ml-auto" src="/sample1.jpg" alt="Hero banner showcasing notebooks"  width={500} height={500}/>
         </div>
       </div>
     </div>

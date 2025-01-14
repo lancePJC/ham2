@@ -33,7 +33,7 @@ const ProductForm = () => {
 
         axios
         .post("/api/add_product", payLoad)
-        .then((res) => {  
+        .then(() => {  
           
           makeToast("Product Added Successfully");
           setPayLoad({

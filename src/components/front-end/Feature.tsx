@@ -2,7 +2,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { RiRefund2Fill } from "react-icons/ri";
 import { FaPercentage, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { AiFillInstagram, AiFillFacebook, AiOutlineInstagram } from "react-icons/ai";
+import {  AiFillFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { SiTiktok } from "react-icons/si";
 import FeatureCard from "./FeatureCard";
 

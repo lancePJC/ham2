@@ -21,18 +21,17 @@ const Dashboard = () => {
   const [updateTable, setUpdateTable] = useState(false);
 
   const dispatch = useAppDispatch();
-
+  
   useEffect(() => {
     dispatch(setLoading(true));
-
+  
     axios
-    .get("/api/get_products")
-    .then((res) => setProducts(res.data))
-    .catch((err) => console.log(err))
-    .finally(() => dispatch(setLoading(false)));
-
-
-  }, [updateTable]);
+      .get("/api/get_products")
+      .then((res) => setProducts(res.data))
+      .catch((err) => console.log(err))
+      .finally(() => dispatch(setLoading(false)));
+  }, [dispatch, updateTable]);
+  
 
   return <div>
       <div className="bg-white h-[calc(100vh-96px)] rounded-lg p-4 ">
